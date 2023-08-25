@@ -14,6 +14,8 @@ public class P5_BrowserSelectionUtility {
 
 	public static WebDriver driver;
 
+	// Step 1  
+	
 	public static void browserLaunch(String browser) {
 
 		// Step 2 Create if else Tree to control the execution of program
