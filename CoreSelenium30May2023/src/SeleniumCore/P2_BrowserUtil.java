@@ -13,13 +13,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class P2_BrowserUtil {
 
 	public static WebDriver driver;
-	
-	public static void browserLaunch(String br) {
+
 		
-	}
-	
-	
-	
 
 	public static void main(String[] args) throws InterruptedException {
 
