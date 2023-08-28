@@ -14,8 +14,6 @@ public class P2_BrowserUtil {
 
 	public static WebDriver driver;
 
-		
-
 	public static void main(String[] args) throws InterruptedException {
 
 		// Step 1 Define String Variable to take input from user
@@ -25,25 +23,25 @@ public class P2_BrowserUtil {
 
 		if (browser.equalsIgnoreCase("chrome")) {
 
-			WebDriverManager.chromedriver().setup();
+			// WebDriverManager.chromedriver().setup();
 
 			driver = new ChromeDriver();
 
 		} else if (browser.equalsIgnoreCase("edge")) {
 
-			WebDriverManager.edgedriver().setup();
+			// WebDriverManager.edgedriver().setup();
 
 			driver = new EdgeDriver();
 
 		} else if (browser.equalsIgnoreCase("firefox")) {
 
-			WebDriverManager.firefoxdriver().setup();
+			// WebDriverManager.firefoxdriver().setup();
 
-			driver = new FirefoxDriver(); //Geko Driver 
+			driver = new FirefoxDriver(); // Geko Driver
 
 		} else {
 
-			WebDriverManager.chromedriver().setup();
+			// WebDriverManager.chromedriver().setup();
 
 			driver = new ChromeDriver();
 

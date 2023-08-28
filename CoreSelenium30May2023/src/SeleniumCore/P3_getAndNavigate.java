@@ -14,7 +14,7 @@ public class P3_getAndNavigate {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		WebDriverManager.chromedriver().setup();
+		// WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 

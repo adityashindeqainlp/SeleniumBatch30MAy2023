@@ -17,7 +17,7 @@ public class P1_LaunchingTheBrowser {
 		// Invoking ChromeDriver Class
 		// Invoking setup method 
 		
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
 		
 		// Step 2 Create Object of ChromeDriver Class AND Store it in WebDriver's Reference 
 		WebDriver driver = new ChromeDriver();

@@ -22,25 +22,25 @@ public class P5_BrowserSelectionUtility {
 
 		if (browser.equalsIgnoreCase("chrome")) {
 
-			WebDriverManager.chromedriver().setup();
+		//	WebDriverManager.chromedriver().setup();
 
 			driver = new ChromeDriver();
 
 		} else if (browser.equalsIgnoreCase("edge")) {
 
-			WebDriverManager.edgedriver().setup();
+		//	WebDriverManager.edgedriver().setup();
 
 			driver = new EdgeDriver();
 
 		} else if (browser.equalsIgnoreCase("firefox")) {
 
-			WebDriverManager.firefoxdriver().setup();
+		//	WebDriverManager.firefoxdriver().setup();
 
 			driver = new FirefoxDriver(); // Geko Driver
 
 		} else {
 
-			WebDriverManager.chromedriver().setup();
+			// WebDriverManager.chromedriver().setup();
 
 			driver = new ChromeDriver();
 
@@ -57,6 +57,8 @@ public class P5_BrowserSelectionUtility {
 		driver.get("https://mbasic.facebook.com/?_rdr");
 
 		Thread.sleep(2500);
+		
+		System.out.println("It is Working ");
 
 		driver.quit();
 
