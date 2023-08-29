@@ -72,11 +72,77 @@ public class P6_LocatorsOfSelenium {
 		// <input value="option1" type="checkbox">
 		// Formula --> //TagName[@Attribute='AttributeValue']
 
-		driver.findElement(By.xpath("//input[@value='option1']")).click();
+         driver.findElement(By.xpath("//input[@id='checkBoxOption1']")).click();
 
-		// 7) * xpath
+		// 7.1) * xpath
 
-		driver.findElement(By.xpath("//*[@value= 'radio1']")).click();
+		// driver.findElement(By.xpath("//*[@value= 'radio1']")).click();
+
+		// 7.2 ) and Operator with Xpath
+
+		// driver.findElement(By.xpath("//select[@id='dropdown-class-example' and
+		// @name='dropdown-class-example']")).click();
+
+		// 7.3) Or operator with xpath
+
+		// driver.findElement(By.xpath("//select[@id='dropdown-class-example' or
+		// type='text']")).click();
+
+		// 7.4)Absloute Xpath
+
+		// "/html/body/div[1]/div[3]/fieldset/select"
+
+		// "/html/body/div[1]/div[6]/div/div/div/div/div/div/main/div/div/div/feed-container/turbo-frame/tab-container/div[2]/div[1]/article[1]/div/div[1]/section/form/button"
+
+		// driver.findElement(By.xpath("/html/body/div[1]/div[3]/fieldset/select")).click();
+
+		// 7.5) Relative Xpath (Parking Lot)
+
+		// 7.6)Xpath following Xpath
+
+		// driver.findElement(By.xpath("//div[@id='checkbox-example']//input[@id='checkBoxOption2']")).click();
+		
+		// 7.7) Xpath with Text()
+		
+		//<a href="https://www.udemy.com/course/mobile-automation-using-appiumselenium-3/?referralCode=C46BF551F5B9EAF08E10">Appium</a>
+		
+		//driver.findElement(By.xpath("//*[text()='Appium']")).click();
+		
+		//7.8) Xpath with Contains 
+		//driver.findElement(By.xpath("//*[contains (@id,'checkBoxOption1')]")).click();
+		
+
+		// 8)Css Selector
+
+		// <input value="radio2" name="radioButton" class="radioButton" type="radio">
+		// Formula --> Tagname[attribute = 'attributeValue']
+
+		// driver.findElement(By.cssSelector("input[value='radio2']")).click();
+
+		// 8.1) Without tagname
+
+		//driver.findElement(By.cssSelector("[value='radio2']")).click();
+		
+		// 8.2) css following css [Attribute = 'AttributeVlaue']...singleSpace...[Attribute = 'AttributeVlaue']
+		// div[id='radio-btn-example'] input[value='radio3']
+		// [id='radio-btn-example'] [value='radio3']
+		
+		//driver.findElement(By.cssSelector("[id='radio-btn-example'] [value='radio3']")).click();
+		
+		// 8.3) id locator using css "#idValue"
+		
+		//driver.findElement(By.cssSelector("#checkBoxOption1")).click();
+		
+		
+		//8.4) class locator using css ".classValue"
+		
+//		List <WebElement> rdButtons = driver.findElements(By.cssSelector(".radioButton"));
+//		
+//		for(WebElement rd : rdButtons) {
+//			
+//			rd.click();
+//		}
+		
 
 		Thread.sleep(2500);
 
