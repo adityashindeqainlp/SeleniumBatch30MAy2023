@@ -72,7 +72,7 @@ public class P6_LocatorsOfSelenium {
 		// <input value="option1" type="checkbox">
 		// Formula --> //TagName[@Attribute='AttributeValue']
 
-         driver.findElement(By.xpath("//input[@id='checkBoxOption1']")).click();
+		// driver.findElement(By.xpath("//input[@id='checkBoxOption1']")).click();
 
 		// 7.1) * xpath
 
@@ -96,21 +96,25 @@ public class P6_LocatorsOfSelenium {
 
 		// driver.findElement(By.xpath("/html/body/div[1]/div[3]/fieldset/select")).click();
 
-		// 7.5) Relative Xpath (Parking Lot)
+		// 7.5) Relative Xpath //*[@id='checkBoxOption1']//parent::label
+		// //*[@id='checkBoxOption1']//ancestor::body
+
+		// driver.findElement(By.xpath("//*[@id='checkBoxOption1']//parent::label")).click();
 
 		// 7.6)Xpath following Xpath
 
 		// driver.findElement(By.xpath("//div[@id='checkbox-example']//input[@id='checkBoxOption2']")).click();
-		
+
 		// 7.7) Xpath with Text()
-		
-		//<a href="https://www.udemy.com/course/mobile-automation-using-appiumselenium-3/?referralCode=C46BF551F5B9EAF08E10">Appium</a>
-		
-		//driver.findElement(By.xpath("//*[text()='Appium']")).click();
-		
-		//7.8) Xpath with Contains 
-		//driver.findElement(By.xpath("//*[contains (@id,'checkBoxOption1')]")).click();
-		
+
+		// <a
+		// href="https://www.udemy.com/course/mobile-automation-using-appiumselenium-3/?referralCode=C46BF551F5B9EAF08E10">Appium</a>
+
+		// driver.findElement(By.xpath("//*[text()='Appium']")).click();
+
+		// 7.8) Xpath with Contains
+		// driver.findElement(By.xpath("//*[contains
+		// (@id,'checkBoxOption1')]")).click();
 
 		// 8)Css Selector
 
@@ -121,28 +125,28 @@ public class P6_LocatorsOfSelenium {
 
 		// 8.1) Without tagname
 
-		//driver.findElement(By.cssSelector("[value='radio2']")).click();
-		
-		// 8.2) css following css [Attribute = 'AttributeVlaue']...singleSpace...[Attribute = 'AttributeVlaue']
+		// driver.findElement(By.cssSelector("[value='radio2']")).click();
+
+		// 8.2) css following css [Attribute =
+		// 'AttributeVlaue']...singleSpace...[Attribute = 'AttributeVlaue']
 		// div[id='radio-btn-example'] input[value='radio3']
 		// [id='radio-btn-example'] [value='radio3']
-		
-		//driver.findElement(By.cssSelector("[id='radio-btn-example'] [value='radio3']")).click();
-		
+
+		// driver.findElement(By.cssSelector("[id='radio-btn-example']
+		// [value='radio3']")).click();
+
 		// 8.3) id locator using css "#idValue"
-		
-		//driver.findElement(By.cssSelector("#checkBoxOption1")).click();
-		
-		
-		//8.4) class locator using css ".classValue"
-		
+
+		// driver.findElement(By.cssSelector("#checkBoxOption1")).click();
+
+		// 8.4) class locator using css ".classValue"
+
 //		List <WebElement> rdButtons = driver.findElements(By.cssSelector(".radioButton"));
 //		
 //		for(WebElement rd : rdButtons) {
 //			
 //			rd.click();
 //		}
-		
 
 		Thread.sleep(2500);
 
