@@ -38,6 +38,14 @@ public class P13_CheckBoxOrangeHRM {
 
 		}
 
+//		for (int i = 1; i < checkBoxes.size(); i++) {
+//
+//			if (i % 2 != 0) {
+//				checkBoxes.get(i).click();
+//			}
+//  
+//	}
+
 		Thread.sleep(5000);
 
 		driver.quit();
