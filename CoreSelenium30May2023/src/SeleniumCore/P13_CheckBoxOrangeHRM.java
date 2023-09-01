@@ -1,5 +1,6 @@
 package SeleniumCore;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -21,30 +22,31 @@ public class P13_CheckBoxOrangeHRM {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 
-		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
-		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin123");
-		driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
+		driver.findElement(By.name("username")).sendKeys("Admin");
+		driver.findElement(By.name("password")).sendKeys("admin123");
+		driver.findElement(By.xpath("//*[@type='submit']")).click();
 
 		driver.findElement(By.xpath("(//*[@class='oxd-text oxd-text--span oxd-main-menu-item--name'])[1]")).click();
 
 		List<WebElement> checkBoxes = driver.findElements(
 				By.cssSelector("[class='orangehrm-container'] [class='oxd-icon bi-check oxd-checkbox-input-icon']"));
+//
+//		for (int i = 1; i < checkBoxes.size(); i++) {
+//
+//			checkBoxes.get(i).click();
+//
+//		}
 
 		for (int i = 1; i < checkBoxes.size(); i++) {
 
-			checkBoxes.get(i).click();
-
-		}
-
-//		for (int i = 1; i < checkBoxes.size(); i++) {
-//
-//			if (i % 2 != 0) {
-//				checkBoxes.get(i).click();
-//			}
-//  
-//	}
+			if (i % 2 != 0) {
+				checkBoxes.get(i).click();
+			}
+  
+	}
 
 		Thread.sleep(5000);
 
