@@ -31,22 +31,25 @@ public class P13_CheckBoxOrangeHRM {
 
 		driver.findElement(By.xpath("(//*[@class='oxd-text oxd-text--span oxd-main-menu-item--name'])[1]")).click();
 
+//		List<WebElement> checkBoxes = driver.findElements(
+//				By.cssSelector("[class='orangehrm-container'] [class='oxd-icon bi-check oxd-checkbox-input-icon']"));
+
 		List<WebElement> checkBoxes = driver.findElements(
-				By.cssSelector("[class='orangehrm-container'] [class='oxd-icon bi-check oxd-checkbox-input-icon']"));
-//
-//		for (int i = 1; i < checkBoxes.size(); i++) {
-//
-//			checkBoxes.get(i).click();
-//
-//		}
+				By.xpath("//div[@class='orangehrm-container']//i[@class='oxd-icon bi-check oxd-checkbox-input-icon']"));
 
 		for (int i = 1; i < checkBoxes.size(); i++) {
 
-			if (i % 2 != 0) {
-				checkBoxes.get(i).click();
-			}
-  
-	}
+			checkBoxes.get(i).click();
+
+		}
+
+//		for (int i = 1; i < checkBoxes.size(); i++) {
+//
+//			if (i % 2 == 0) {
+//				checkBoxes.get(i).click();
+//			}
+//  
+//	}
 
 		Thread.sleep(5000);
 
