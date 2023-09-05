@@ -18,17 +18,18 @@ public class P15_ScrollDownWebPage {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
-		
+		//Step 1 Initialize browser and Hit Url 
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		
 		
-	
-		
+		//Step 2  Type Cast Driver to JavaScript Executor Class
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
+		// Step 3 Using class reference variable Invoke Execute script method 
+		// Step 4 place "Window.scrolBy(x,y)" with args ""
 		js.executeScript("window.scrollBy(0,1700)", "");
 		
 		
