@@ -87,7 +87,7 @@ public class P20_DatePicker {
 
 		P20_DatePicker obj = new P20_DatePicker();
 
-         obj.selectDOB("1950", "April", "17", 4);
+         obj.selectDOB("1996", "June", "29",1);
 	
 		Thread.sleep(5000);
 		driver.quit();
