@@ -71,9 +71,9 @@ public class P20_DatePicker {
 		
 		clickOnDatePicker();
 		Thread.sleep(2500);
-		fetchYear("1996" , 1);
-		selectMonth("June");
-		selectDay("29");
+		fetchYear(yearFromUser , clicks);
+		selectMonth(monthFromUser);
+		selectDay(dayFromUser);
 
 	}
 
@@ -87,7 +87,7 @@ public class P20_DatePicker {
 
 		P20_DatePicker obj = new P20_DatePicker();
 
-         obj.selectDOB("1996", "June", "29", 1);
+         obj.selectDOB("1950", "April", "17", 4);
 	
 		Thread.sleep(5000);
 		driver.quit();
