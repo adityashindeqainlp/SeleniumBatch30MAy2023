@@ -21,12 +21,16 @@ public class P26_MouseActionsWithIframe {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://jqueryui.com/slider/");
+		
+		WebElement iframe = driver.findElement(By.tagName("iframe"));
+		
+		driver.switchTo().frame(iframe);
 
 		WebElement handleOfSlider = driver.findElement(By.xpath("//*[@id='slider']//span"));
 
 		Actions action = new Actions(driver);
 
-		action.clickAndHold().moveToElement(handleOfSlider, 500, 0).build().perform();
+		action.clickAndHold(handleOfSlider).moveToElement(handleOfSlider, 250, 0).release().build().perform();
 
 	}
 
