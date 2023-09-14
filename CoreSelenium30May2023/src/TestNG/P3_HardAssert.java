@@ -38,7 +38,16 @@ public class P3_HardAssert {
 		Assert.assertEquals(urlFromBuild, "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login123");
 	}
 
+	
 	@Test(priority = 2)
+	public void test() {
+		
+		System.out.println("Test Case 1");
+		
+	}
+	
+	
+	@Test(priority = 3)
 	public void tearDown() {
 
 		driver.quit();

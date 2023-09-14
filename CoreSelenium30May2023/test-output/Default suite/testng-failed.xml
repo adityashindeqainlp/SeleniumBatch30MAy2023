@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.P3_HardAssert">
+      <class name="TestNG.P10_DataProvider">
         <methods>
-          <include name="validateUrl"/>
+          <include name="loginValidation" invocation-numbers="1 2 3"/>
         </methods>
-      </class> <!-- TestNG.P3_HardAssert -->
+      </class> <!-- TestNG.P10_DataProvider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
