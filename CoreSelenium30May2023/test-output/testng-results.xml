@@ -1,25 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="5" failed="3" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Launching the Browser and Hit the Url]]>
+    </line>
+    <line>
+      <![CDATA[Closing the Browser]]>
+    </line>
+    <line>
+      <![CDATA[Launching the Browser and Hit the Url]]>
+    </line>
+    <line>
+      <![CDATA[Closing the Browser]]>
+    </line>
+    <line>
+      <![CDATA[Launching the Browser and Hit the Url]]>
+    </line>
+    <line>
+      <![CDATA[Closing the Browser]]>
+    </line>
+    <line>
+      <![CDATA[Launching the Browser and Hit the Url]]>
+    </line>
+    <line>
+      <![CDATA[Closing the Browser]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-09-13T18:07:01 GMT-04:00" name="Default suite" finished-at="2023-09-13T18:07:54 GMT-04:00" duration-ms="53109">
+  <suite started-at="2023-09-14T16:42:12 GMT-04:00" name="Default suite" finished-at="2023-09-14T16:43:59 GMT-04:00" duration-ms="106078">
     <groups>
     </groups>
-    <test started-at="2023-09-13T18:07:01 GMT-04:00" name="Default test" finished-at="2023-09-13T18:07:54 GMT-04:00" duration-ms="53109">
-      <class name="TestNG.P10_DataProvider">
-        <test-method signature="launchBrowser()[pri:0, instance:TestNG.P10_DataProvider@74ea2410]" started-at="2023-09-13T18:07:01 GMT-04:00" name="launchBrowser" finished-at="2023-09-13T18:07:14 GMT-04:00" duration-ms="12418" status="PASS">
+    <test started-at="2023-09-14T16:42:12 GMT-04:00" name="Default test" finished-at="2023-09-14T16:43:59 GMT-04:00" duration-ms="106078">
+      <class name="TestNG.P12_TestNgAnnotationsWorking">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestNG.P12_TestNgAnnotationsWorking@7ef82753]" started-at="2023-09-14T16:42:13 GMT-04:00" name="launchBrowser" finished-at="2023-09-14T16:42:23 GMT-04:00" duration-ms="10246" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Launching the Browser and Hit the Url]]>
+            </line>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="urlValidation()[pri:1, instance:TestNG.P10_DataProvider@74ea2410]" started-at="2023-09-13T18:07:14 GMT-04:00" name="urlValidation" finished-at="2023-09-13T18:07:14 GMT-04:00" duration-ms="14" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- urlValidation -->
-        <test-method signature="titleValidation()[pri:2, instance:TestNG.P10_DataProvider@74ea2410]" started-at="2023-09-13T18:07:14 GMT-04:00" name="titleValidation" finished-at="2023-09-13T18:07:14 GMT-04:00" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- titleValidation -->
-        <test-method signature="loginValidation(java.lang.String,java.lang.String)[pri:3, instance:TestNG.P10_DataProvider@74ea2410]" started-at="2023-09-13T18:07:14 GMT-04:00" name="loginValidation" data-provider="getData" finished-at="2023-09-13T18:07:19 GMT-04:00" duration-ms="5628" status="PASS">
+        <test-method signature="loginValidation(java.lang.String,java.lang.String)[pri:0, instance:TestNG.P12_TestNgAnnotationsWorking@7ef82753]" started-at="2023-09-14T16:42:23 GMT-04:00" name="loginValidation" data-provider="getData" finished-at="2023-09-14T16:42:28 GMT-04:00" duration-ms="5587" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,7 +54,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginValidation -->
-        <test-method signature="loginValidation(java.lang.String,java.lang.String)[pri:3, instance:TestNG.P10_DataProvider@74ea2410]" started-at="2023-09-13T18:07:19 GMT-04:00" name="loginValidation" data-provider="getData" finished-at="2023-09-13T18:07:31 GMT-04:00" duration-ms="11318" status="FAIL">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNG.P12_TestNgAnnotationsWorking@7ef82753]" started-at="2023-09-14T16:42:28 GMT-04:00" name="tearDown" finished-at="2023-09-14T16:42:39 GMT-04:00" duration-ms="10150" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing the Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestNG.P12_TestNgAnnotationsWorking@7ef82753]" started-at="2023-09-14T16:42:39 GMT-04:00" name="launchBrowser" finished-at="2023-09-14T16:42:51 GMT-04:00" duration-ms="12856" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Launching the Browser and Hit the Url]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="loginValidation(java.lang.String,java.lang.String)[pri:0, instance:TestNG.P12_TestNgAnnotationsWorking@7ef82753]" started-at="2023-09-14T16:42:51 GMT-04:00" name="loginValidation" data-provider="getData" finished-at="2023-09-14T16:43:06 GMT-04:00" duration-ms="14401" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -56,9 +89,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b0c6edb0d5a240838528677d1a2df4a6, findElement {using=xpath, value=//*[@class='oxd-userdropdown-tab']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52547/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b0c6edb0d5a240838528677d1a2df4a6]]>
+Command: [2d1a595f4c2386f5e0ca38d88968efd3, findElement {using=xpath, value=//*[@class='oxd-userdropdown-tab']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51938}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51938/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d1a595f4c2386f5e0ca38d88968efd3]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='oxd-userdropdown-tab']"}
@@ -67,9 +100,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b0c6edb0d5a240838528677d1a2df4a6, findElement {using=xpath, value=//*[@class='oxd-userdropdown-tab']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52547/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b0c6edb0d5a240838528677d1a2df4a6
+Command: [2d1a595f4c2386f5e0ca38d88968efd3, findElement {using=xpath, value=//*[@class='oxd-userdropdown-tab']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51938}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51938/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d1a595f4c2386f5e0ca38d88968efd3
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -86,7 +119,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at TestNG.P10_DataProvider.loginValidation(P10_DataProvider.java:57)
+at TestNG.P12_TestNgAnnotationsWorking.loginValidation(P12_TestNgAnnotationsWorking.java:46)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -121,7 +154,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginValidation -->
-        <test-method signature="loginValidation(java.lang.String,java.lang.String)[pri:3, instance:TestNG.P10_DataProvider@74ea2410]" started-at="2023-09-13T18:07:31 GMT-04:00" name="loginValidation" data-provider="getData" finished-at="2023-09-13T18:07:42 GMT-04:00" duration-ms="11559" status="FAIL">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNG.P12_TestNgAnnotationsWorking@7ef82753]" started-at="2023-09-14T16:43:06 GMT-04:00" name="tearDown" finished-at="2023-09-14T16:43:18 GMT-04:00" duration-ms="12415" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing the Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestNG.P12_TestNgAnnotationsWorking@7ef82753]" started-at="2023-09-14T16:43:18 GMT-04:00" name="launchBrowser" finished-at="2023-09-14T16:43:26 GMT-04:00" duration-ms="8243" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Launching the Browser and Hit the Url]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="loginValidation(java.lang.String,java.lang.String)[pri:0, instance:TestNG.P12_TestNgAnnotationsWorking@7ef82753]" started-at="2023-09-14T16:43:26 GMT-04:00" name="loginValidation" data-provider="getData" finished-at="2023-09-14T16:43:38 GMT-04:00" duration-ms="12001" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -142,9 +189,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b0c6edb0d5a240838528677d1a2df4a6, findElement {using=xpath, value=//*[@class='oxd-userdropdown-tab']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52547/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b0c6edb0d5a240838528677d1a2df4a6]]>
+Command: [2163b50bfdac4e376ef7e19c46b4995c, findElement {using=xpath, value=//*[@class='oxd-userdropdown-tab']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52000}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52000/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2163b50bfdac4e376ef7e19c46b4995c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='oxd-userdropdown-tab']"}
@@ -153,9 +200,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b0c6edb0d5a240838528677d1a2df4a6, findElement {using=xpath, value=//*[@class='oxd-userdropdown-tab']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52547/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b0c6edb0d5a240838528677d1a2df4a6
+Command: [2163b50bfdac4e376ef7e19c46b4995c, findElement {using=xpath, value=//*[@class='oxd-userdropdown-tab']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52000}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52000/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2163b50bfdac4e376ef7e19c46b4995c
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -172,7 +219,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at TestNG.P10_DataProvider.loginValidation(P10_DataProvider.java:57)
+at TestNG.P12_TestNgAnnotationsWorking.loginValidation(P12_TestNgAnnotationsWorking.java:46)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -207,7 +254,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginValidation -->
-        <test-method signature="loginValidation(java.lang.String,java.lang.String)[pri:3, instance:TestNG.P10_DataProvider@74ea2410]" started-at="2023-09-13T18:07:42 GMT-04:00" name="loginValidation" data-provider="getData" finished-at="2023-09-13T18:07:53 GMT-04:00" duration-ms="11289" status="FAIL">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNG.P12_TestNgAnnotationsWorking@7ef82753]" started-at="2023-09-14T16:43:38 GMT-04:00" name="tearDown" finished-at="2023-09-14T16:43:39 GMT-04:00" duration-ms="723" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing the Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TestNG.P12_TestNgAnnotationsWorking@7ef82753]" started-at="2023-09-14T16:43:39 GMT-04:00" name="launchBrowser" finished-at="2023-09-14T16:43:46 GMT-04:00" duration-ms="6764" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Launching the Browser and Hit the Url]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="loginValidation(java.lang.String,java.lang.String)[pri:0, instance:TestNG.P12_TestNgAnnotationsWorking@7ef82753]" started-at="2023-09-14T16:43:46 GMT-04:00" name="loginValidation" data-provider="getData" finished-at="2023-09-14T16:43:58 GMT-04:00" duration-ms="11879" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -228,9 +289,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b0c6edb0d5a240838528677d1a2df4a6, findElement {using=xpath, value=//*[@class='oxd-userdropdown-tab']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52547/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b0c6edb0d5a240838528677d1a2df4a6]]>
+Command: [4add776f090873168792f58b91f58658, findElement {using=xpath, value=//*[@class='oxd-userdropdown-tab']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52041/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4add776f090873168792f58b91f58658]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='oxd-userdropdown-tab']"}
@@ -239,9 +300,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b0c6edb0d5a240838528677d1a2df4a6, findElement {using=xpath, value=//*[@class='oxd-userdropdown-tab']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52547/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b0c6edb0d5a240838528677d1a2df4a6
+Command: [4add776f090873168792f58b91f58658, findElement {using=xpath, value=//*[@class='oxd-userdropdown-tab']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.149, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52041/devtoo..., se:cdpVersion: 109.0.5414.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4add776f090873168792f58b91f58658
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -258,7 +319,7 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at TestNG.P10_DataProvider.loginValidation(P10_DataProvider.java:57)
+at TestNG.P12_TestNgAnnotationsWorking.loginValidation(P12_TestNgAnnotationsWorking.java:46)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -293,11 +354,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginValidation -->
-        <test-method signature="tearDown()[pri:4, instance:TestNG.P10_DataProvider@74ea2410]" started-at="2023-09-13T18:07:53 GMT-04:00" name="tearDown" finished-at="2023-09-13T18:07:54 GMT-04:00" duration-ms="771" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestNG.P12_TestNgAnnotationsWorking@7ef82753]" started-at="2023-09-14T16:43:58 GMT-04:00" name="tearDown" finished-at="2023-09-14T16:43:59 GMT-04:00" duration-ms="684" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Closing the Browser]]>
+            </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TestNG.P10_DataProvider -->
+      </class> <!-- TestNG.P12_TestNgAnnotationsWorking -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
