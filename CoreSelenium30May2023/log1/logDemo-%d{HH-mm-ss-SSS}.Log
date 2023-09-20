@@ -1,12 +1,6 @@
-17:08:36 [main] INFO  Log4j2.demo2 - This is Information Log
-17:08:36 [main] DEBUG Log4j2.demo2 - This is a debug log
-17:08:36 [main] ERROR Log4j2.demo2 - This is error log
-17:08:36 [main] FATAL Log4j2.demo2 - This is a fatal log
-17:08:36 [main] TRACE Log4j2.demo2 - This is a Trace Log
-17:08:36 [main] WARN  Log4j2.demo2 - This is a warning log
-17:08:36 [main] INFO  Log4j2.demo2 - This is Information Log
-17:08:36 [main] DEBUG Log4j2.demo2 - This is a debug log
-17:08:36 [main] ERROR Log4j2.demo2 - This is error log
-17:08:36 [main] FATAL Log4j2.demo2 - This is a fatal log
-17:08:36 [main] TRACE Log4j2.demo2 - This is a Trace Log
-17:08:36 [main] WARN  Log4j2.demo2 - This is a warning log
+12:56:39 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+12:56:39 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+12:56:39 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+12:56:40 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+12:56:41 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x315d9dadc441bfb1
+12:56:50 [AsyncHttpClient-1-4] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
