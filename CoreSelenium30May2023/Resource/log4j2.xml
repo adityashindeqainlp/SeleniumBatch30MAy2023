@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+
+ <Properties>
+    <Property name="filename">./log1</Property>
+  </Properties>
+
+	<Appenders>
+
+		<RollingFile name="file" fileName="${filename}/logDemo-%d{HH-mm-ss-SSS}.Log" filePattern="${filename}/logDemo-%d{dd-MM-yyyy HH-mm-ss}.Log">
+			<PatternLayout>
+				<pattern>%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</pattern>
+			</PatternLayout>
+			<SizeBasedTriggeringPolicy size="1 KB" />
+		</RollingFile>
+
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Logger name="Log4j2" level="trace" additivity="false">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="file" />
+		</Logger>
+		<Root level="trace">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="file" />
+		</Root>
+	</Loggers>
+</Configuration>

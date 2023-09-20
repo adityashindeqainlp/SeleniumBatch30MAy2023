@@ -1,0 +1,12 @@
+16:49:33 [main] INFO  Log4j2.demo2 - This is Information Log
+16:49:33 [main] ERROR Log4j2.demo2 - This is error log
+16:49:33 [main] FATAL Log4j2.demo2 - This is a fatal log
+16:49:33 [main] WARN  Log4j2.demo2 - This is a warning log
+16:49:33 [main] INFO  Log4j2.demo2 - This is Information Log
+16:49:33 [main] ERROR Log4j2.demo2 - This is error log
+16:49:33 [main] FATAL Log4j2.demo2 - This is a fatal log
+16:49:33 [main] WARN  Log4j2.demo2 - This is a warning log
+16:49:33 [main] INFO  Log4j2.demo2 - This is Information Log
+16:49:33 [main] ERROR Log4j2.demo2 - This is error log
+16:49:33 [main] FATAL Log4j2.demo2 - This is a fatal log
+16:49:33 [main] WARN  Log4j2.demo2 - This is a warning log
